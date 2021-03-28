@@ -33,12 +33,12 @@ console.log(ImageNum); // to check the number of images
 for(var i=1; i<=ImageNum; i++){ // to loop the images
 
   if (major == "electrical"){
-    document.write('<img src="pic/electrical.jpg">');
+    document.write("this is image number: "+ i + '<img src="pic/electrical.jpg">' + "<br>");
   }else if(major == "civil"){
-    document.write('<img src="pic/Civil.jpg">');
+    document.write("this is image number: "+ i +'<img src="pic/Civil.jpg">' + "<br>");
   }else if(major == "architectural"){
-    document.write('<img src="pic/Architectural.jpg">');
+    document.write("this is image number: "+ i +'<img src="pic/Architectural.jpg">' + "<br>");
   }else if(major == "mechanical"){
-    document.write('<img src="pic/mechanical.jpg">');
+    document.write("this is image number: "+ i +'<img src="pic/mechanical.jpg">' + "<br>");
   }
 }
