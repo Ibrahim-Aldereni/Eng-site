@@ -1,5 +1,6 @@
 // =========================================Lab: 04=========================================
-
+window.onload = function(){
+  
 alert("Welcome to Engineering Guide Website!"); // this is introductory message
 var userName = prompt("Enter your name Please:"); // assign the user name to vaiable
 var userColor = prompt("Enter you favourite color:"); // assign a user color to variable
@@ -41,4 +42,6 @@ for(var i=1; i<=ImageNum; i++){ // to loop the images
   }else if(major == "mechanical"){
     document.write("this is image number: "+ i +'<img src="pic/mechanical.jpg">' + "<br>");
   }
+}
+
 }
