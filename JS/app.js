@@ -6,11 +6,17 @@ var userColor = prompt("Enter you favourite color:"); // assign a user color to 
 var colorConfirm = confirm("Are you sure this is the color that you want?"); // color confirmation
 
 if(colorConfirm == true){  // to make sure the color is right
-  document.write('<p style="background-color:' + userColor + '; font-size: 50px"> Welcome ' + userName + ' your color is ' + userColor + '</p>')
+
+  document.getElementById("color").innerHTML = userName + " your color is => " + userColor ;
+  document.getElementById("color").style.backgroundColor = userColor;
+  document.getElementById("color").style.fontSize = "50px";
 }else{
-  var userColor = prompt("Enter you favourite color:");
-  var colorConfirm = confirm("Are you sure this is the color that you want?");
-  document.write('<p style="background-color:' + userColor + '; font-size: 50px"> Welcome ' + userName + ' your color is ' + userColor + '</p>');
+  userColor = prompt("Enter you favourite color:");
+  colorConfirm = confirm("Are you sure this is the color that you want?");
+
+  document.getElementById("color").innerHTML = userName + " your color is => " + userColor ;
+  document.getElementById("color").style.backgroundColor = userColor;
+  document.getElementById("color").style.fontSize = "50px";
 }
 
 // =========================================Lab: 05=========================================
@@ -42,3 +48,5 @@ for(var i=1; i<=ImageNum; i++){ // to loop the images
     document.write("this is image number: "+ i +'<img src="pic/mechanical.jpg">' + "<br>");
   }
 }
+
+
