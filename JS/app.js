@@ -5,18 +5,21 @@ var userName = prompt("Enter your name Please:"); // assign the user name to vai
 var userColor = prompt("Enter you favourite color:"); // assign a user color to variable
 var colorConfirm = confirm("Are you sure this is the color that you want?"); // color confirmation
 
-if(colorConfirm == true){  // to make sure the color is right
-
+function update(){
   document.getElementById("color").innerHTML = userName + " your color is => " + userColor ;
   document.getElementById("color").style.backgroundColor = userColor;
   document.getElementById("color").style.fontSize = "50px";
+}
+
+if(colorConfirm == true){  // to make sure the color is right
+
+  update();
+
 }else{
   userColor = prompt("Enter you favourite color:");
   colorConfirm = confirm("Are you sure this is the color that you want?");
 
-  document.getElementById("color").innerHTML = userName + " your color is => " + userColor ;
-  document.getElementById("color").style.backgroundColor = userColor;
-  document.getElementById("color").style.fontSize = "50px";
+  update();
 }
 
 // =========================================Lab: 05=========================================
