@@ -44,4 +44,20 @@ nav ul li a{
 /******************************* main ******************************/
 main{
   background-color: #536162;
+  color:#f3f4ed ;
+  font-family: monospace;
+  text-align: center;
+  width: 70%;
+  margin: 0px 0px 0px 15%;
 }
+
+h2{
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+
+section{
+  font-size: 15px;
+}
+
+/******************************* footer ******************************/
