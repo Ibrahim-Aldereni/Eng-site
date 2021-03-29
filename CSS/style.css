@@ -42,6 +42,7 @@ nav ul li a{
 }
 
 /******************************* main ******************************/
+
 main{
   background-color: #536162;
   color:#f3f4ed ;
@@ -61,3 +62,25 @@ section{
 }
 
 /******************************* footer ******************************/
+
+footer{
+  background-color: #c06014;
+  color: #f3f4ed;
+  font-family: monospace;
+  font-size: 15px;
+  height: 60px;
+}
+
+footer p{
+  text-align: center;
+  
+}
+
+footer ul{
+  text-align: center;
+}
+
+footer ul li{
+  display: inline-block;
+  padding-left: 20px ;
+}
