@@ -5,7 +5,7 @@ var userName = prompt("Enter your name Please:"); // assign the user name to vai
 var userColor = prompt("Enter you favourite color:"); // assign a user color to variable
 var colorConfirm = confirm("Are you sure this is the color that you want?"); // color confirmation
 
-function update(){
+function update(){ // this is for lab 07
   document.getElementById("color").innerHTML = userName + " your color is => " + userColor ;
   document.getElementById("color").style.backgroundColor = userColor;
   document.getElementById("color").style.fontSize = "50px";
@@ -39,17 +39,28 @@ while (ImageNum <= 0 || ImageNum >= 6){ // make sure that images in range
 
 console.log(ImageNum); // to check the number of images
 
-for(var i=1; i<=ImageNum; i++){ // to loop the images
+function addPhoto(major){ // this is for lab 07, and this function will create image tag and but the source of it
+  var photo = document.createElement('img');
+  photo.setAttribute('src', 'pic/'+major+'.jpg');
+  var element = document.getElementById("color");
+  element.after(photo);
+}
+
+for(var i=1; i <= ImageNum; i++){ // to loop the images
 
   if (major == "electrical"){
-    document.write("this is image number: "+ i + '<img src="pic/electrical.jpg">' + "<br>");
+    addPhoto(major);
   }else if(major == "civil"){
-    document.write("this is image number: "+ i +'<img src="pic/Civil.jpg">' + "<br>");
+    addPhoto(major);
   }else if(major == "architectural"){
-    document.write("this is image number: "+ i +'<img src="pic/Architectural.jpg">' + "<br>");
+    addPhoto(major);
   }else if(major == "mechanical"){
-    document.write("this is image number: "+ i +'<img src="pic/mechanical.jpg">' + "<br>");
+    addPhoto(major);
   }
 }
+
+
+
+
 
 
